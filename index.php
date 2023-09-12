@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <div id="app">
         <header>
@@ -17,6 +19,9 @@
                     <img src="img/logo.svg" alt="logo">
                 </div>
             </nav>
+            <div class="link-container">
+                <a href="insert.php">Aggiungi dischi</a>
+            </div>
         </header>
         <div class="container">
             <div class="card" v-for="cd in cdList">
@@ -35,4 +40,5 @@
 
     <script src="js/main.js"></script>
 </body>
+
 </html>
